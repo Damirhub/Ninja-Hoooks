@@ -7,13 +7,14 @@ class BookList extends Component {
     const {isLightTheme, light, dark} = this.context
     const theme = isLightTheme ? light : dark
     const bg = { background : theme.ui }
+    const txt = ["the way of kings", "the name of the wind", "the final empire"]
 
     return ( 
-      <div className="book-list">
+      <div className="book-list" style = {{ color: theme.syntax, background: theme.bg}}>
         <ul>
-          <li style = {bg}>the way of kings</li>
-          <li style = {bg}>the name of the wind</li>
-          <li style = {bg}>the final empire</li>
+          {
+            txt.map(x => <li key = {x} style = {bg}>{x}</li>)
+          }
         </ul>
       </div>
     );
