@@ -7,8 +7,8 @@ function App() {
   return (
     <div className="App">
       <ThemeContextProvider>
-      <Navbar />
-      <BookList />
+        <Navbar />
+        <BookList />
       </ThemeContextProvider>
     </div>
   );
