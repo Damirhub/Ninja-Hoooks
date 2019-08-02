@@ -6,7 +6,7 @@ export default class AuthContextProvider extends Component {
         isAuthenticated: false
     }
     toggleAuth = () => {
-        this.setState({ isLightTheme: !this.state.isLightTheme})
+        this.setState({ isAuthenticated : !this.state.isAuthenticated})
     }
     render() {
         return (
